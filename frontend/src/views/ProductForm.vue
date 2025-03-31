@@ -153,10 +153,92 @@ async function submitForm() {
 </script>
 
 <style scoped>
-.card {
-  border-radius: 10px;
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
 }
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #f8f9fa;
+}
+
 .card-header {
-  border-radius: 10px 10px 0 0;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.text-end {
+  margin-top: 20px;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
 }
 </style>
